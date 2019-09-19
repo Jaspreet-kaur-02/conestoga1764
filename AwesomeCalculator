@@ -52,7 +52,77 @@ namespace AwesomeCalculatorTest
             double actualResult = testCalc.GetAddition(); // Act
             Assert.AreEqual(result, actualResult);
         }
-        
+        [Test]
+
+        public void GetSubtraction_Input6point3and1point3_Returns5point0()
+        {
+            double numa = 6.3;
+            double numb = 1.3;
+
+            double result = numa - numb;
+            Calc testCalc = new Calc(numa, numb); // Arrange
+            double actualResult = testCalc.GetSubtraction(); // Act
+            Assert.AreEqual(result, actualResult);
+        }
+
+        [Test]
+
+        public void GetSubtraction_Input5point8and3point8_Returns2point0()
+        {
+            double numa = 5.8;
+            double numb = 3.8;
+
+            double result = numa - numb;
+            Calc testCalc = new Calc(numa, numb); // Arrange
+            double actualResult = testCalc.GetSubtraction(); // Act
+            Assert.AreEqual(result, actualResult);
+        }
+
+        [Test]
+
+        public void GetDivision_Input8point0and2point0_Returns4point0()
+        {
+            double numa = 8.0;
+            double numb = 2.0;
+
+            double result = numa / numb;
+            Calc testCalc = new Calc(numa, numb); // Arrange
+            double actualResult = testCalc.GetDivision(); // Act
+            Assert.AreEqual(result, actualResult);
+        }
+
+        [Test]
+
+        public void GetDivision_Input9point0and4point5_Returns2point0()
+        {
+            double numa = 9.0;
+            double numb = 4.5;
+
+            double result = numa / numb;
+            Calc testCalc = new Calc(numa, numb); // Arrange
+            double actualResult = testCalc.GetDivision(); // Act
+            Assert.AreEqual(result, actualResult);
+        }
+
+        [Test]
+
+        public void GetDivision_Input20point0and4point0_Returns5point0()
+        {
+            double numa = 20.0;
+            double numb = 4.0;
+
+            double result = numa / numb;
+            Calc testCalc = new Calc(numa, numb); // Arrange
+            double actualResult = testCalc.GetDivision(); // Act
+            Assert.AreEqual(result, actualResult);
+        }
+
+
+
+
+    }
+}
+
         
         
         
