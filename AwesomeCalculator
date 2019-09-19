@@ -1,0 +1,58 @@
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using AwesomeCalculator;
+using NUnit.Framework;
+
+namespace AwesomeCalculatorTest
+{
+
+    [TestFixture]
+    public class Class1
+    {
+        [Test]
+        public void GetAddition_Input9point6and7point6_Returns17point2()
+        {
+            double numa = 9.6;
+            double numb = 7.6;
+
+            double result = numa + numb;
+            Calc testCalc = new Calc(numa, numb); // Arrange
+            double actualResult = testCalc.GetAddition(); // Act
+            Assert.AreEqual(result, actualResult);
+
+        }
+
+        [Test]
+
+        public void GetAddition_Input15point3and6point3_Returns21point6()
+        {
+            double numa = 15.3;
+            double numb = 6.3;
+
+            double result = numa + numb;
+            Calc testCalc = new Calc(numa, numb); // Arrange
+            double actualResult = testCalc.GetAddition(); // Act
+            Assert.AreEqual(result, actualResult);
+        }
+
+        [Test]
+
+        public void GetAddition_Input96point6and22point2_Returns118point8()
+        {
+            double numa = 96.6;
+            double numb = 22.2;
+
+            double result = numa + numb;
+            Calc testCalc = new Calc(numa, numb); // Arrange
+            double actualResult = testCalc.GetAddition(); // Act
+            Assert.AreEqual(result, actualResult);
+        }
+        
+        
+        
+        
